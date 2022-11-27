@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="weatherAnchorPanID" prefHeight="491.0" prefWidth="550.0" style="-fx-background-color: aliceblue; -fx-border-color: lightsteelblue; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.appmeteo.controller.WeatherDataController">
+    <children>
+        <Label fx:id="dateID" alignment="CENTER" layoutX="197.0" layoutY="64.0" maxWidth="152.0" minWidth="120" prefHeight="26.0" prefWidth="152.0" text="DD / MM / YYYY" textAlignment="CENTER">
+            <font>
+                <Font size="20.0" />
+            </font></Label>
+        <Label fx:id="cityID" alignment="CENTER" layoutX="175.0" layoutY="220.0" maxWidth="200.0" minHeight="0.0" prefHeight="33.0" prefWidth="200.0" text="MARSEILLE" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="304.0" layoutY="300.0" text="Ressenti :" />
+        <Label layoutX="197.0" layoutY="300.0" prefHeight="19.0" prefWidth="59.0" text="Humidité :" />
+        <Label layoutX="31.0" layoutY="300.0" prefHeight="17.0" prefWidth="94.0" text="Vitesse du vent :" />
+        <Label fx:id="averageTempID" alignment="TOP_RIGHT" layoutX="124.0" layoutY="120.0" prefHeight="99.0" prefWidth="152.0" text="14°" textAlignment="CENTER">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <Label fx:id="conditionID" alignment="CENTER" layoutX="173.0" layoutY="255.0" prefHeight="23.0" prefWidth="200.0" text="Dégagé" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="feelsLikeID" layoutX="368.0" layoutY="300.0" prefHeight="17.0" prefWidth="25.0" text="-15°" />
+        <Label fx:id="humidityID" layoutX="256.0" layoutY="300.0" prefHeight="17.0" prefWidth="35.0" text="63 %" />
+        <Label fx:id="windSpeedID" layoutX="125.0" layoutY="300.0" text="14,9 km/h" />
+        <Label fx:id="minTempID" alignment="CENTER_RIGHT" layoutX="464.0" layoutY="300.0" prefHeight="17.0" prefWidth="26.0" text="-17°" textAlignment="RIGHT" />
+        <Label fx:id="maxTempID" layoutX="500.0" layoutY="300.0" text="-17°" />
+        <Button fx:id="addFavouriteID" layoutX="502.0" layoutY="18.0" mnemonicParsing="false" onAction="#addFavourite" snapToPixel="false" text="+" textAlignment="CENTER" />
+        <ImageView fx:id="logoWeatherID" fitHeight="90.0" fitWidth="90.0" layoutX="288.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="494.0" layoutY="300.0" prefHeight="17.0" prefWidth="8.0" text="/" />
+        <Label layoutX="407.0" layoutY="300.0" text="Min/ Max : " />
+        <Line endX="70.0" layoutX="90.0" layoutY="400.0" rotate="90.0" />
+        <Line endX="70.0" layoutX="140.0" layoutY="400.0" rotate="90.0" />
+        <Line endX="70.0" layoutX="190.0" layoutY="400.0" rotate="90.0" />
+        <Line endX="70.0" layoutX="240.0" layoutY="400.0" rotate="90.0" />
+        <Line endX="70.0" layoutX="290.0" layoutY="400.0" rotate="90.0" />
+        <Line endX="70.0" layoutX="340.0" layoutY="400.0" rotate="90.0" />
+        <Line endX="70.0" layoutX="390.0" layoutY="400.0" rotate="90.0" />
+        <ImageView fx:id="image1Hour" fitHeight="20.0" fitWidth="20.0" layoutX="95.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image2Hour" fitHeight="20.0" fitWidth="20.0" layoutX="140.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image3Hour" fitHeight="20.0" fitWidth="20.0" layoutX="190.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image4Hour" fitHeight="20.0" fitWidth="20.0" layoutX="240.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image5Hour" fitHeight="20.0" fitWidth="20.0" layoutX="290.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image6Hour" fitHeight="20.0" fitWidth="20.0" layoutX="340.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image7Hour" fitHeight="20.0" fitWidth="20.0" layoutX="390.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="image8Hour" fitHeight="20.0" fitWidth="20.0" layoutX="440.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+        <Label fx:id="hour1" layoutX="94.0" layoutY="365.0" text="12H" />
+        <Label fx:id="hour2" layoutX="139.0" layoutY="365.0" text="12H" />
+        <Label fx:id="hour3" layoutX="189.0" layoutY="365.0" text="12H" />
+        <Label fx:id="hour4" layoutX="239.0" layoutY="365.0" text="12H" />
+        <Label fx:id="hour5" layoutX="289.0" layoutY="365.0" text="12H" />
+        <Label fx:id="hour6" layoutX="338.0" layoutY="365.0" text="12H" />
+        <Label fx:id="hour7" layoutX="389.0" layoutY="365.0" text="12H" />
+        <Label fx:id="hour8" layoutX="439.0" layoutY="365.0" text="12H" />
+        <Label fx:id="temp1" alignment="CENTER" layoutX="93.0" layoutY="392.0" text="-13°" />
+        <Label fx:id="temp2" alignment="CENTER" layoutX="138.0" layoutY="392.0" text="-13°" />
+        <Label fx:id="temp3" alignment="CENTER" layoutX="188.0" layoutY="392.0" text="-13°" />
+        <Label fx:id="temp4" alignment="CENTER" layoutX="238.0" layoutY="392.0" text="-13°" />
+        <Label fx:id="temp5" alignment="CENTER" layoutX="288.0" layoutY="392.0" text="-13°" />
+        <Label fx:id="temp6" alignment="CENTER" layoutX="337.0" layoutY="392.0" text="-13°" />
+        <Label fx:id="temp7" alignment="CENTER" layoutX="388.0" layoutY="392.0" text="-13°" />
+        <Label fx:id="temp8" alignment="CENTER" layoutX="438.0" layoutY="392.0" text="-13°" />
+    </children>
+</AnchorPane>
